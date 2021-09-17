@@ -10,7 +10,7 @@
     margin:0
   }
   .title{
-    display: flex;
+    display: inline-block;
     color: black;
     background-color: rgba(0,139, 139,0.8);
     display: flex;
