@@ -13,8 +13,10 @@
     display: inline-block;
     color: black;
     background-color: rgba(0,139, 139,0.8);
+    border-radius: 0px;
+    padding: 10px 10px;
+    margin-bottom: 0px;
     justify-content: center;
-    align-items: center;
   }
   
   .menu-container {
