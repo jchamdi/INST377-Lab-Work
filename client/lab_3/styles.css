@@ -10,7 +10,6 @@
     font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   }
   .title{
-    display: flex;
     color: black;
     background-color: rgba(0,139, 139,0.8);
     display: flex;
