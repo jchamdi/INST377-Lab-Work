@@ -8,10 +8,9 @@
     flex-direction: column;
     justify-content: center;
     font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-    margin:10px
   }
   .title{
-    display: block;
+    display: flex;
     color: black;
     background-color: rgba(0,139, 139,0.8);
     display: flex;
