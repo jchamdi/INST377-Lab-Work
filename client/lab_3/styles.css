@@ -12,7 +12,7 @@
   .title{
     color: black;
     background-color: rgba(0,139, 139,0.8);
-    display: flex;
+    display: block;
     justify-content: flex-start;
   }
   
