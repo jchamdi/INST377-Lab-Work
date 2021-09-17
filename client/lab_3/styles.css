@@ -5,9 +5,12 @@
   }
   
   .title{
+    display: flex;
     color: black;
     background-color: rgba(0,139, 139,0.8);
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   .menu-container {
