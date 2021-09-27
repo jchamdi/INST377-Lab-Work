@@ -82,7 +82,7 @@
     animation: fadeVisibility 0.5s;
   }
   
-  .carousel .carousel__actions {
+  .photo-grid-container .carousel__actions {
     display: flex;
     align-items: center;
   }
