@@ -94,7 +94,7 @@
     border: 0;
     font-weight: bold;
     cursor: pointer;
-    width: 40px;
+    width: 50px;
     height: 20px;
   }
   .photo-grid-container .carousel__actions button:focus {
