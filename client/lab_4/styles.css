@@ -89,7 +89,8 @@
   
   .photo-grid-container .carousel__actions button {
     display: block;
-    border-radius: 50px;
+    border-radius: 5px;
+    padding: 0.25em;
     border: 0;
     font-weight: bold;
     cursor: pointer;
@@ -99,7 +100,7 @@
   .photo-grid-container .carousel__actions button:focus {
       display: block;
       background-color: orange;
-      border-color: blue;
+      border:1px solid blue;
   }
     
   @keyframes fadeVisibility {
