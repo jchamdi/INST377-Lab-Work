@@ -84,12 +84,7 @@
   
   .carousel .carousel__actions {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
   }
   
   .carousel .carousel__actions button {
