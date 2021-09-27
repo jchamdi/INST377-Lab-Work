@@ -60,7 +60,7 @@
     display: flex;
     justify-content: center;
   }
-  .carousel {
+  .photo-grid-container .carousel {
     overflow: hidden;
     max-width: 600px;
     position: relative;
@@ -87,7 +87,7 @@
     align-items: center;
   }
   
-  .carousel .carousel__actions button {
+  .photo-grid-container .carousel__actions button {
     border-radius: 50px;
     border: 0;
     font-weight: bold;
