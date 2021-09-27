@@ -100,7 +100,7 @@
   .photo-grid-container .carousel__actions button:focus {
       display: block;
       background-color: orange;
-      border:1px solid lightgreen;
+      border:1px solid green;
   }
     
   @keyframes fadeVisibility {
