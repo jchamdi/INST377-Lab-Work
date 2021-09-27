@@ -90,7 +90,7 @@
   .photo-grid-container .carousel__actions button {
     display: block;
     border-radius: 5px;
-    padding: 0.5em;
+    padding: 0.25em;
     border: 0;
     font-weight: bold;
     cursor: pointer;
