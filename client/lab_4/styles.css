@@ -96,13 +96,6 @@
     height: 40px;
   }
   
-  .carousel .carousel__actions button#carousel__button--prev {
-    margin-left: 20px;
-  }
-  
-  .carousel .carousel__actions button#carousel__button--next {
-    margin-right: 20px;
-  }
   
   @keyframes fadeVisibility {
     0% {
