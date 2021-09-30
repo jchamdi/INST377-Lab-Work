@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   const doodler = document.createElement('div');
-  const doodlerLeftSpace = 50;
-  const doodlerRightSpace = 150;
+  let doodlerLeftSpace = 50;
+  let doodlerRightSpace = 150;
   const isGameOver = false;
   const platformCount = 5;
   const platforms = [];
