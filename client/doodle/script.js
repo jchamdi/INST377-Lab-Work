@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const isGameOver = false;
   const platformCount = 5;
   const platforms = [];
-});
+
 
 function createDoodler() {
   grid.appendChild(doodler);
@@ -14,7 +14,10 @@ function createDoodler() {
   doodler.style.left = `${doodlerLeftSpace}px`;
   doodler.style.bottom = `${doodlerBottomSpace}px`;
 }
+createDoodler(){
 
+})
+/*
 class Platform {
   constructor(newPlatBottom) {
     this.bottom = newPlatBottom;
@@ -42,4 +45,4 @@ function start() {
     createDoodler();
     createPlatforms();
   }
-}
+*/
