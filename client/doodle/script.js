@@ -42,4 +42,5 @@ function start() {
     createDoodler();
     createPlatforms();
   }
+}
 })
