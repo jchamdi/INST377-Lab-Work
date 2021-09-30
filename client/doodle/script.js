@@ -14,10 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     doodler.style.left = doodlerLeftSpace + 'px'
     doodler.style.bottom = doodlerBottomSpace + 'px'
   }
-  createDoodler() 
-
-})
-/*
+ 
 class Platform {
   constructor(newPlatBottom) {
     this.bottom = newPlatBottom;
@@ -45,4 +42,4 @@ function start() {
     createDoodler();
     createPlatforms();
   }
-*/
+})
