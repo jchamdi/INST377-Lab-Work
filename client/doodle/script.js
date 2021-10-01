@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
               //so we can visually not see platform anymore
               firstPlatform.classList.remove('platform')
               platforms.shift()
+              score++
               console.log(platforms)
               let newPlatform = new Platform(600)
               platforms.push(newPlatform)
