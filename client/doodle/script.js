@@ -148,9 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       isGoingRight = true
       rightTimerId = setInterval(function () {
-        //changed to 313 to fit doodle image
-        if (doodlerLeftSpace <= 313) {
-          console.log('going right')
+        if (doodlerLeftSpace <= 340) {
           doodlerLeftSpace +=5
           doodler.style.left = doodlerLeftSpace + 'px'
         } else moveLeft()
