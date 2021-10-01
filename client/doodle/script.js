@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let speed = 3
     let platformCount = 5
     let platforms = []
-    let score = 0
     let doodlerLeftSpace = 50
     let startPoint = 150
     let doodlerBottomSpace = startPoint
@@ -17,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let isGoingRight = false
     let leftTimerId
     let rightTimerId
-  
+    let score = 0
+
     class Platform {
       constructor(newPlatBottom) {
         this.left = Math.random() * 315
