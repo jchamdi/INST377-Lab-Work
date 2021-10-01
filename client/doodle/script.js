@@ -161,8 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(leftTimerId)
       clearInterval(rightTimerId)
     }
-  
-    //assign functions to keyCodes
     function control(e) {
       doodler.style.bottom = doodlerBottomSpace + 'px'
       if(e.key === 'ArrowLeft') {
