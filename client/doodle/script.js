@@ -52,11 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
             if(platform.bottom < 10) {
               let firstPlatform = platforms[0].visual
+              //so we can visually not see platform anymore
               firstPlatform.classList.remove('platform')
               platforms.shift()
               console.log(platforms)
-              score++
-              var newPlatform = new Platform(600)
+              let newPlatform = new Platform(600)
               platforms.push(newPlatform)
             }
         }) 
@@ -72,51 +72,59 @@ document.addEventListener('DOMContentLoaded', () => {
       doodler.style.bottom = doodlerBottomSpace + 'px'
     }
   
-  function fall() {
-    isJumping = false
-      clearInterval(upTimerId)
-      downTimerId = setInterval(function () {
-        doodlerBottomSpace -= 5
-        doodler.style.bottom = doodlerBottomSpace + 'px'
-        if (doodlerBottomSpace <= 0) {
-          gameOver()
-        }
-        platforms.forEach(platform => {
-          if (
-            (doodlerBottomSpace >= platform.bottom) &&
-            (doodlerBottomSpace <= (platform.bottom + 15)) &&
-            ((doodlerLeftSpace + 60) >= platform.left) && 
-            (doodlerLeftSpace <= (platform.left + 85)) &&
-            !isJumping
-            ) {
-              console.log('tick')
-              startPoint = doodlerBottomSpace
-              jump()
-              console.log('start', startPoint)
-              isJumping = true
-            }
-        })
-  
-      },20)
-  }
   
     function jump() {
       clearInterval(downTimerId)
       isJumping = true
       upTimerId = setInterval(function () {
-        console.log(startPoint)
-        console.log('1', doodlerBottomSpace)
         doodlerBottomSpace += 20
         doodler.style.bottom = doodlerBottomSpace + 'px'
-        console.log('2',doodlerBottomSpace)
-        console.log('s',startPoint)
-        if (doodlerBottomSpace > (startPoint + 200)) {
+        if (doodlerBottomSpace > startPoint + 200) {
           fall()
-          isJumping = false
         }
       },30)
     }
-  
+    function fall() {
+          clearInterval(upTimerId)
+          isJumping = false
+          downTimerId = setInterval(function () {
+            doodlerBottomSpace -= 5
+            doodler.style.bottom = doodlerBottomSpace + 'px'
+            if (doodlerBottomSpace <= 0) {
+              gameOver()
+            }
+            platforms.forEach(platform => {
+              if (
+                (doodlerBottomSpace >= platform.bottom) &&
+                (doodlerBottomSpace <= (platform.bottom + 15)) &&
+                ((doodlerLeftSpace + 60) >= platform.left) && 
+                (doodlerLeftSpace <= (platform.left + 85)) &&
+                !isJumping
+                ) {
+                  console.log('landed')
+                  startPoint = doodlerBottomSpace
+                  jump()
+                  console.log('start', startPoint)
+                  isJumping = true
+                }
+            })
+      
+          },20)
+      }
+      function gameOver() {
+        console.log('game over')
+        isGameOver = true
+        //if first child exists continue to remove until we have zero children
+        while (grid.firstChild) {
+          console.log('remove')
+          grid.removeChild(grid.firstChild)
+        }
+        grid.innerHTML = score
+        clearInterval(upTimerId)
+        clearInterval(downTimerId)
+        clearInterval(leftTimerId)
+        clearInterval(rightTimerId)
+      }
     function moveLeft() {
       if (isGoingRight) {
           clearInterval(rightTimerId)
@@ -165,19 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (e.key === 'ArrowUp') {
         moveStraight()
       }
-    }
-  
-    function gameOver() {
-      isGameOver = true
-      while (grid.firstChild) {
-        console.log('remove')
-        grid.removeChild(grid.firstChild)
-      }
-      grid.innerHTML = score
-      clearInterval(upTimerId)
-      clearInterval(downTimerId)
-      clearInterval(leftTimerId)
-      clearInterval(rightTimerId)
     }
   
   
