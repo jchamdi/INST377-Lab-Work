@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   background-color: darkslategray;
 }
 
-/* Page Layout */
+/* Page Layout 
 .columns {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
-
+*/
 body {
   color: #5D6063;
   background-color: #EAEDF0;
