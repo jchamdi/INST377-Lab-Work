@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html>
   <head>
-    <meta charset='UTF-8'/>
-    <title>Speaker Submission</title>
-    <link rel='stylesheet' href='styles.css'/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prof A's Lab 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel= "stylesheet" href= "styles.css">
   </head>
   <body>
-    <header class='speaker-form-header'>
-      <h1>Speaker Submission</h1>
-      <p><em>Want to speak at our fake conference? Fill out
-        this form.</em></p>
+    <div class="column">
+      <div class = "column is-four-fifths"> Prof A's Lab 5 </div>
     </header>
-    <form action='' method='get' class='speaker-form'>
+    <form action='/api' method='get' class='speaker-form'>
         <div class='form-row'>
             <label for='full-name'>Name</label>
             <input id='full-name' name='full-name' type='text'/>
@@ -38,7 +39,7 @@
             <label for='talk-type-2' class='radio-label'>Workshop</label>
           </fieldset>
           <div class='form-row'>
-            <button>Submit</button>
+            <button class = button is-success>Submit</button>
           </div>
     </form>
   </body>

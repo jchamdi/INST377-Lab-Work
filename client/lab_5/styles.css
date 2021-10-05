@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +11,7 @@ body {
   background-color: darkslategray;
 }
 
-/* Page Layout 
+/* Page Layout */
 .columns {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +24,7 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
-*/
+/*
 body {
   color: #5D6063;
   background-color: #EAEDF0;
@@ -89,13 +88,13 @@ body {
   }
   .form-row {
     flex-direction: row;
-    align-items: flex-start; /* To avoid stretching */
+    align-items: flex-start; 
     margin-bottom: 20px;
   }
   .form-row input[type='text'],
-  .form-row input[type='email'],    /* Add */
-  .form-row select,                 /* These */
-  .form-row textarea {              /* Selectors */
+  .form-row input[type='email'],    
+  .form-row select,                
+  .form-row textarea {              
     width: 250px;
     height: initial;
   }
@@ -124,7 +123,7 @@ body {
 .form-row input[type='email']:invalid {
   border: 1px solid #D55C5F;
   color: #D55C5F;
-  box-shadow: none; /* Remove default red glow in Firefox */
+  box-shadow: none; 
 }
 .legacy-form-row {
   border: none;
@@ -170,3 +169,4 @@ body {
 .form-row button:active {
   background-color: #407FC7;
 }
+*/
