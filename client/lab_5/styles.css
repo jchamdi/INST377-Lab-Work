@@ -92,7 +92,10 @@ body {
     align-items: flex-start; /* To avoid stretching */
     margin-bottom: 20px;
   }
-  .form-row input[type='text'] {
+  .form-row input[type='text'],
+  .form-row input[type='email'],    /* Add */
+  .form-row select,                 /* These */
+  .form-row textarea {              /* Selectors */
     width: 250px;
     height: initial;
   }
