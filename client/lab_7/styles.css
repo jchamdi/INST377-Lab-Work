@@ -1,17 +1,15 @@
 .columns {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .wrapper {
-    display: flex;
-  }
-  .container {
-    max-width: 960px;
-    
-  }
-  
-#mapid { 
-    height: 340px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
- }
+.wrapper {
+  display: flex;
+}
+.container {
+  max-width: 960px;
+}
+
+#mapid {
+  height: 340px;
+}
